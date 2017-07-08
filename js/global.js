@@ -21,6 +21,7 @@ $(document).ready(function () {
             });
         });
     });
+    createWaypoints();
 });
 
 function setMessages() {
@@ -35,10 +36,16 @@ var set_locale_to = function(locale) {
 };
 
 function createWaypoints() {
-    waypoint = new Waypoint({
+    pic = new Waypoint({
         element: document.getElementById('pexel'),
-        handler: function () {
-            notify('Basic waypoint triggered');
+        handler: function (direction) {
+            console.log('Triggered waypoint pic ' + direction);
+        }
+    });
+    bio = new Waypoint({
+        element: document.getElementById('bio'),
+        handler: function (direction) {
+            console.log('Triggered waypoint bio ' + direction);
         }
     });
 }
