@@ -7,7 +7,6 @@ $(document).ready(function () {
             'de': './js/i18n/de.json',
             'en': './js/i18n/en.json'
         }).done(function () {
-            console.log($.i18n('app-title'));
             $.i18n().locale = 'de';
             set_locale_to(url('?locale'));
             setMessages();
@@ -26,6 +25,7 @@ $(document).ready(function () {
 
 function setMessages() {
     $('#welcome').text($.i18n('welcome'));
+    $('#bio').text($.i18n('bio'));
 }
 
 var set_locale_to = function(locale) {
@@ -33,3 +33,12 @@ var set_locale_to = function(locale) {
         $.i18n().locale = locale;
     }
 };
+
+function createWaypoints() {
+    waypoint = new Waypoint({
+        element: document.getElementById('pexel'),
+        handler: function () {
+            notify('Basic waypoint triggered');
+        }
+    });
+}
