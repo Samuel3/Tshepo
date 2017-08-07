@@ -27,6 +27,11 @@ $(document).ready(function () {
 function setMessages() {
     $('#welcome').text($.i18n('welcome'));
     $('#bio').text($.i18n('bio'));
+    $('#bioLabel').text($.i18n('bioLabel'));
+    $('#listenLabel').text($.i18n('listenLabel'));
+    $('#bookingLabel').text($.i18n('bookingLabel'));
+    $('#aboutLabel').text($.i18n('aboutLabel'));
+
 }
 
 var set_locale_to = function(locale) {
