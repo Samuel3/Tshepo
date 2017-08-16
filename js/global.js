@@ -25,12 +25,8 @@ $(document).ready(function () {
 });
 
 function setMessages() {
-    $('#welcome').text($.i18n('welcome'));
-    $('#bio').text($.i18n('bio'));
-    $('#bioLabel').text($.i18n('bioLabel'));
-    $('#listenLabel').text($.i18n('listenLabel'));
-    $('#bookingLabel').text($.i18n('bookingLabel'));
-    $('#aboutLabel').text($.i18n('aboutLabel'));
+    $('body').i18n();
+    $('#offersContent').html($.i18n('offersContent'));
 
 }
 
@@ -53,4 +49,8 @@ function createWaypoints() {
             console.log('Triggered waypoint bio ' + direction);
         }
     });
+}
+
+function scrollToId(id) {
+    $(document).scrollTo($(id), 300, {offset:{top:-70}});
 }

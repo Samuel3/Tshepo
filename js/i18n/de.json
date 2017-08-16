@@ -12,5 +12,9 @@
 	"bioLabel": "Bio",
 	"listenLabel": "Anhören",
 	"bookingLabel": "Buchen",
-	"aboutLabel": "Über"
+	"aboutLabel": "Über",
+	"offers": "Angebote",
+	"offersContent": "<b>Hip Hop Konzert mit</b> 'C-Hope' und Liz: 400€<br><br>—> '90 Minuten aufgeheizte Stimmung, Musik mit Tiefgang und Geschichten die berühren.'<h3>Musikworkshops:</h3><b>Beatbox und Rappworkshop (Cecil)</b> 50€<br><br>—> Rappen und Beatboxen für Anfänger und Forgeschrittene; Grundlagen erlernen<br><br><b>Gesangsworkshop (Liz) 50€</b><br><br>—> Grundlagen mit Tipps und Tricks zum singen alleine, als Solist auf der Bühne oder im Chor<br><br><b>Songwriting (Cecil und Liz) 80€</b><br><br>—> Eigene Texte schreiben und vertonen.<br><img src='pics/Lizzy.png' alt='Lizzy'/><img src='pics/TshepoStage.png' alt='C-Hope on stage'/>",
+	"listenHeader": "Anhören"
+
 }
