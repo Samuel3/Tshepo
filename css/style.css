@@ -1,1 +1,23 @@
-body { padding-top: 70px; }
+/**
+ * Made by Samuel Mathes
+ */
+body {
+    padding-top: 70px;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.german{
+    background-image: url("../pics/de.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 32px;
+    padding: 10px 20px 10px 26px;
+}
+.english {
+    background-image: url("../pics/us.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 32px;
+    padding: 10px 20px 10px 26px;
+}

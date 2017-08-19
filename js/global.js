@@ -3,6 +3,7 @@
  */
 $(document).ready(function () {
     jQuery(function($) {
+        $("#de").parent().css("display","none");
         $.i18n().load({
             'de': './js/i18n/de.json',
             'en': './js/i18n/en.json'
@@ -13,26 +14,29 @@ $(document).ready(function () {
             History.Adapter.bind(window, 'statechange', function(){
                 set_locale_to(url('?locale'));
             });
-            $('.switch-locale').on('click', 'a', function(e) {
+            $('#lang').on('click', 'a', function(e) {
+                    $("#lang").children().css("display", "block");
                 e.preventDefault();
                 $.i18n().locale = $(this).data('locale');
                 History.pushState(null, null, "?locale=" + $(this).data('locale'));
                 setMessages();
+                $("#" + $(this).data('locale')).parent().css("display","none");
             });
         });
     });
     createWaypoints();
+    addScrolltargets();
 });
 
 function setMessages() {
     $('body').i18n();
     $('#offersContent').html($.i18n('offersContent'));
-
 }
 
 var set_locale_to = function(locale) {
     if (locale) {
         $.i18n().locale = locale;
+        $("#" + locale).parent().css("display","none");
     }
 };
 
@@ -44,13 +48,77 @@ function createWaypoints() {
         }
     });
     bio = new Waypoint({
-        element: document.getElementById('bio'),
+        element: $("#bio"),
         handler: function (direction) {
-            console.log('Triggered waypoint bio ' + direction);
+            $(".nav")
+                .find(".active")
+                .removeClass("active");
+            $("#bioLabel")
+                .parent()
+                .addClass("active");
+        }
+    });
+
+    about = new Waypoint({
+        element: $("#about"),
+        handler: function (direction) {
+            $(".nav")
+                .find(".active")
+                .removeClass("active");
+            $("#aboutLabel")
+                .parent()
+                .addClass("active");
+        }
+    });
+
+    listen = new Waypoint({
+        element: $("#listen"),
+        handler: function (direction) {
+            $(".nav")
+                .find(".active")
+                .removeClass("active");
+            $("#listenLabel")
+                .parent()
+                .addClass("active");
+        }
+    });
+
+    booking = new Waypoint({
+        element: $("#booking"),
+        handler: function (direction) {
+            $(".nav")
+                .find(".active")
+                .removeClass("active");
+            $("#bookingLabel")
+                .parent()
+                .addClass("active");
         }
     });
 }
 
 function scrollToId(id) {
-    $(document).scrollTo($(id), 300, {offset:{top:-70}});
+    $(document).scrollTo($(id), 400, {offset:{top:-70}});
+}
+
+function addScrolltargets() {
+    $("#bioLabel").click(function(e){
+        e.preventDefault();
+        scrollToId("#bio");
+    });
+    $("#aboutLabel").click(function(e){
+        e.preventDefault();
+        scrollToId("#about");
+    });
+    $("#listenLabel").click(function(e){
+        e.preventDefault();
+        scrollToId("#listen");
+    });
+    $("#bookingLabel").click(function(e){
+        e.preventDefault();
+        scrollToId("#booking");
+    });
+    $("#top").click(function(e){
+        e.preventDefault();
+        scrollToId("#welcome");
+    });
 }

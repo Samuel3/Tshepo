@@ -30,48 +30,41 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand" id="top" href="#">C-Hope</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#" data-i18n="bioLabel" onclick="scrollToId('#bio')"><span class="sr-only" >(current)</span></a></li>
-                <li><a href="#" data-i18n="listenLabel" onclick="scrollToId('#listen')"> <span class="sr-only">(current)</span></a></li>
-                <li><a href="#" data-i18n="bookingLabel" onclick="
-					  scrollToId('#booking')
-					"> <span class="sr-only">(current)</span></a></li>
-                <li><a href="#" data-i18n="aboutLabel" onclick="scrollToId('#about')"> <span class="sr-only">(current)</span></a></li>
-
+                <li><a href="#" id="bioLabel" data-i18n="bioLabel"><span class="sr-only" >(current)</span></a></li>
+                <li><a href="#" id="listenLabel" data-i18n="listenLabel"> <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" id="bookingLabel" data-i18n="bookingLabel"> <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" id="aboutLabel" data-i18n="aboutLabel"> <span class="sr-only">(current)</span></a></li>
                 <li class="dropdown"></li>
-
             </ul>
-
+			<ul id="lang" class="nav navbar-nav navbar-right">
+				<li><a href="#" id="de" data-locale="de"><span class="german"></span></a></li>
+				<li><a href="#" id="en" data-locale="en"><span class="english"></span></a></li>
+			</ul>
         </div>
     </div>
 </nav>
 
-
-
         <h1 id="welcome">Welcome</h1>
-        <ul class="switch-locale">
-            <li><a href="#" data-locale="en">English</a></li>
-            <li><a href="#" data-locale="de">Deutsch</a></li>
-        </ul>
 		<div id="pexel">
-			<img src="pexels-photo.jpg" />
+			<img src="pexels-photo.jpg" class="img-fluid" />
 		</div>
 		<div id="bio">
 			<h2 data-i18n="bioLabel"></h2>
 			<p data-i18n="bio"></p>
-		</div>
-		<div id="booking">
-			<h2 data-i18n="offers"></h2>
-			<p id="offersContent"/></p>
 		</div>
 		<div id="listen">
 			<h2 data-i18n="listenHeader"></h2>
 			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321974013&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240341380&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 		</div>
-		<div id="about"><h1 data-i18n="aboutLabel"></h1></div>
+		<div id="booking">
+			<h2 data-i18n="offers"></h2>
+			<p id="offersContent"/></p>
+		</div>
+<div id="about"><h1 data-i18n="aboutLabel"></h1></div>
 	</body>
 </html>
