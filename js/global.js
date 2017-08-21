@@ -1,6 +1,8 @@
 /**
- * Created by Samuel on 08.07.2017.
+ * Created by Samuel Mathes on 08.07.2017.
  */
+var HEADER_SIZE = 70;
+
 $(document).ready(function () {
     jQuery(function($) {
         $("#de").parent().css("display","none");
@@ -17,10 +19,8 @@ $(document).ready(function () {
             $('#lang').on('click', 'a', function(e) {
                     $("#lang").children().css("display", "block");
                 e.preventDefault();
-                $.i18n().locale = $(this).data('locale');
+                changeToLang($(this).data('locale'));
                 History.pushState(null, null, "?locale=" + $(this).data('locale'));
-                setMessages();
-                $("#" + $(this).data('locale')).parent().css("display","none");
             });
         });
     });
@@ -35,69 +35,40 @@ function setMessages() {
 
 var set_locale_to = function(locale) {
     if (locale) {
-        $.i18n().locale = locale;
-        $("#" + locale).parent().css("display","none");
+        changeToLang(locale);
     }
 };
 
 function createWaypoints() {
-    pic = new Waypoint({
-        element: document.getElementById('pexel'),
-        handler: function (direction) {
-            console.log('Triggered waypoint pic ' + direction);
-        }
-    });
-    bio = new Waypoint({
-        element: $("#bio"),
-        handler: function (direction) {
-            $(".nav")
-                .find(".active")
-                .removeClass("active");
-            $("#bioLabel")
-                .parent()
-                .addClass("active");
-        }
-    });
 
-    about = new Waypoint({
-        element: $("#about"),
-        handler: function (direction) {
-            $(".nav")
-                .find(".active")
-                .removeClass("active");
-            $("#aboutLabel")
-                .parent()
-                .addClass("active");
-        }
-    });
+    $("#bio").waypoint({handler: function (direction) {
+        $(".nav").find(".active").removeClass("active");
+        $("#bioLabel").parent().addClass("active");
+    }});
 
-    listen = new Waypoint({
-        element: $("#listen"),
-        handler: function (direction) {
-            $(".nav")
-                .find(".active")
-                .removeClass("active");
-            $("#listenLabel")
-                .parent()
-                .addClass("active");
-        }
-    });
+    $("#about").waypoint({handler: function (direction) {
+        $(".nav").find(".active").removeClass("active");
+        $("#aboutLabel").parent().addClass("active");
+    }});
 
-    booking = new Waypoint({
-        element: $("#booking"),
-        handler: function (direction) {
-            $(".nav")
-                .find(".active")
-                .removeClass("active");
-            $("#bookingLabel")
-                .parent()
-                .addClass("active");
-        }
-    });
+    $("#listen").waypoint({handler: function (direction) {
+        $(".nav").find(".active").removeClass("active");
+        $("#listenLabel").parent().addClass("active");
+    }});
+
+    $("#booking").waypoint({handler: function (direction) {
+        $(".nav").find(".active").removeClass("active");
+        $("#bookingLabel").parent().addClass("active");
+    }});
+
+    $("nav").waypoint({handler: function(direction) {
+        $("nav").toggleClass("lift", direction === "down");
+    },
+        offset: 25});
 }
 
 function scrollToId(id) {
-    $(document).scrollTo($(id), 400, {offset:{top:-70}});
+    $(document).scrollTo($(id), 400, {offset:{top: - HEADER_SIZE}});
 }
 
 function addScrolltargets() {
@@ -121,4 +92,11 @@ function addScrolltargets() {
         e.preventDefault();
         scrollToId("#welcome");
     });
+}
+
+function changeToLang(lang){
+    $("#lang").children().css("display", "block");
+    $.i18n().locale = lang;
+    $("#" + lang).parent().css("display","none");
+    setMessages();
 }

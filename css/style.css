@@ -9,15 +9,18 @@ body {
 }
 .german{
     background-image: url("../pics/de.png");
+}
+.english {
+    background-image: url("../pics/us.png");
+}
+
+.flag{
     background-repeat: no-repeat;
     width: 48px;
     height: 32px;
     padding: 10px 20px 10px 26px;
 }
-.english {
-    background-image: url("../pics/us.png");
-    background-repeat: no-repeat;
-    width: 48px;
-    height: 32px;
-    padding: 10px 20px 10px 26px;
+
+.lift{
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
 }
