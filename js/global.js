@@ -26,6 +26,12 @@ $(document).ready(function () {
     });
     createWaypoints();
     addScrolltargets();
+    $("#myNavbar").find("a").click(function(){$("#myNavbar").removeClass("in", 500)});
+    $(document).click(function(e) {
+        if (!$(e.target).is('a')) {
+            $('.collapse').collapse('hide');
+        }
+    });
 });
 
 function setMessages() {
@@ -44,27 +50,31 @@ function createWaypoints() {
     $("#bio").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#bioLabel").parent().addClass("active");
-    }});
+    },
+        offset: HEADER_SIZE});
 
     $("#about").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#aboutLabel").parent().addClass("active");
-    }});
+    },
+        offset: HEADER_SIZE});
 
     $("#listen").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#listenLabel").parent().addClass("active");
-    }});
+    },
+        offset: HEADER_SIZE});
 
     $("#booking").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#bookingLabel").parent().addClass("active");
-    }});
+    },
+        offset: HEADER_SIZE});
 
     $("nav").waypoint({handler: function(direction) {
         $("nav").toggleClass("lift", direction === "down");
     },
-        offset: 25});
+        offset: HEADER_SIZE });
 }
 
 function scrollToId(id) {
