@@ -16,56 +16,69 @@
         <script src="js/lib/srcollTo.js"></script>
         <script src="js/lib/waypoints.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script src="js/lib/photoswipe-ui-default.min.js"></script>
+		<script src="js/lib/photoswipe.min.js"></script>
 		<script src="js/global.js"></script>
 
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/photoswipe.css">
 	</head>
 	<body>
 
-<nav id="header" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="top" href="#">C-Hope</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="#" id="bioLabel" data-i18n="bioLabel"><span class="sr-only" >(current)</span></a></li>
-                <li><a href="#" id="listenLabel" data-i18n="listenLabel"> <span class="sr-only">(current)</span></a></li>
-                <li><a href="#" id="bookingLabel" data-i18n="bookingLabel"> <span class="sr-only">(current)</span></a></li>
-                <li><a href="#" id="aboutLabel" data-i18n="aboutLabel"> <span class="sr-only">(current)</span></a></li>
-                <li class="dropdown"></li>
-            </ul>
-			<ul id="lang" class="nav navbar-nav navbar-right">
-				<li><a href="#" id="de" data-locale="de"><span class="german flag"></span></a></li>
-				<li><a href="#" id="en" data-locale="en"><span class="english flag"></span></a></li>
-			</ul>
-        </div>
-    </div>
-</nav>
+		<div class="spinner"></div>
 
-	<h1 id="welcome">Welcome</h1>
-		<div id="pexel">
-			<img src="pexels-photo.jpg" class="img-responsive" />
+		<nav id="header" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" id="top" href="#">C-Hope</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#" id="listenLabel" data-i18n="listenLabel"> <span class="sr-only">(current)</span></a></li>
+						<li><a href="#" id="bookingLabel" data-i18n="bookingLabel"> <span class="sr-only">(current)</span></a></li>
+						<li><a href="#" id="bioLabel" data-i18n="bioLabel"><span class="sr-only" >(current)</span></a></li>
+						<li><a href="#" id="imprintLabel" data-i18n="imprintLabel"> <span class="sr-only">(current)</span></a></li>
+						<li class="dropdown"></li>
+					</ul>
+					<ul id="lang" class="nav navbar-nav navbar-right">
+						<li><a href="#" id="de" data-locale="de"><span class="german flag"></span></a></li>
+						<li><a href="#" id="en" data-locale="en"><span class="english flag"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="content">
+			<h1 id="welcome" class="invisible">Welcome</h1>
+			<div id="intro" class="invisible">
+				<img src="pexels-photo.jpg" class="img-responsive" />
+			</div>
+			<div id="listen" class="invisible">
+				<h2 data-i18n="listenHeader"></h2>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321974013&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240341380&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			</div>
+			<div id="booking" class="invisible">
+				<h2 data-i18n="offers"></h2>
+				<p id="offersContent"/></p>
+			</div>
+			<div id="bio" class="invisible">
+				<h2 data-i18n="bioLabel"></h2>
+				<p data-i18n="bio"></p>
+			</div>
+			<div id="pics" class="invisible">
+				<h2 data-i18n="picsLabel"></h2>
+				<p data-i18n="pics"></p>
+			</div>
+			<div id="imprint" class="invisible">
+				<h1 data-i18n="imprintLabel"></h1>
+			</div>
 		</div>
-		<div id="bio">
-			<h2 data-i18n="bioLabel"></h2>
-			<p data-i18n="bio"></p>
-		</div>
-		<div id="listen">
-			<h2 data-i18n="listenHeader"></h2>
-			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321974013&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240341380&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-		</div>
-		<div id="booking">
-			<h2 data-i18n="offers"></h2>
-			<p id="offersContent"/></p>
-		</div>
-<div id="about"><h1 data-i18n="aboutLabel"></h1></div>
 	</body>
 </html>

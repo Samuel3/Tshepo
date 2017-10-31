@@ -32,51 +32,82 @@ $(document).ready(function () {
             $('.collapse').collapse('hide');
         }
     });
+    setTimeout(function(){displayInit();}, 500);
 });
 
+// This method sets all the messages of the site depending of the chosen lang
 function setMessages() {
     $('body').i18n();
     $('#offersContent').html($.i18n('offersContent'));
 }
 
+// This method toggles language
 var set_locale_to = function(locale) {
     if (locale) {
         changeToLang(locale);
     }
 };
 
+// This function creates the waypoint for the scrolling animations
 function createWaypoints() {
 
+    // enlights the nav bar of bio
     $("#bio").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#bioLabel").parent().addClass("active");
     },
         offset: HEADER_SIZE});
 
-    $("#about").waypoint({handler: function (direction) {
+    // Fade in for bio
+    $("#bio").waypoint({
+        handler: function () {
+            displayBio();
+        }, offset: 4 * HEADER_SIZE    });
+
+    // enlights the nav bar of imprint
+    $("#imprint").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
-        $("#aboutLabel").parent().addClass("active");
+        $("#imprintLabel").parent().addClass("active");
     },
         offset: HEADER_SIZE});
 
+    // Fade in of imprint div
+    $("#imprint").waypoint({handler: function () {
+        displayImprint();
+    }, offset: 6 * HEADER_SIZE});
+
+    // enlights the nav bar of listen
     $("#listen").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#listenLabel").parent().addClass("active");
     },
         offset: HEADER_SIZE});
 
+    // Fade in of listen div
+    $("#listen").waypoint({handler: function(){
+        displayListen();
+    }, offset: 4 * HEADER_SIZE});
+
+    // Enlights the booking in nav bar
     $("#booking").waypoint({handler: function (direction) {
         $(".nav").find(".active").removeClass("active");
         $("#bookingLabel").parent().addClass("active");
     },
         offset: HEADER_SIZE});
 
+    // Fade in of booking div
+    $("#booking").waypoint({handler: function(){
+        displayBooking();
+    }, offset: 4 * HEADER_SIZE});
+
+    // Effects for the nav bar
     $("nav").waypoint({handler: function(direction) {
         $("nav").toggleClass("lift", direction === "down");
     },
-        offset: HEADER_SIZE });
+        offset: -HEADER_SIZE });
 }
 
+// This method is used in nav bar to scroll to dedicated div
 function scrollToId(id) {
     $(document).scrollTo($(id), 400, {offset:{top: - HEADER_SIZE}});
 }
@@ -86,9 +117,9 @@ function addScrolltargets() {
         e.preventDefault();
         scrollToId("#bio");
     });
-    $("#aboutLabel").click(function(e){
+    $("#imprintLabel").click(function(e){
         e.preventDefault();
-        scrollToId("#about");
+        scrollToId("#imprint");
     });
     $("#listenLabel").click(function(e){
         e.preventDefault();
@@ -104,9 +135,38 @@ function addScrolltargets() {
     });
 }
 
+// This method sets all language labels and hides the flag of the language
 function changeToLang(lang){
     $("#lang").children().css("display", "block");
     $.i18n().locale = lang;
     $("#" + lang).parent().css("display","none");
     setMessages();
+}
+
+// This method displays the init content
+function displayInit(){
+    $(".spinner").fadeOut("normal");
+    $("nav").show("slow");
+    $("#welcome").removeClass("invisible").fadeIn("slow");
+    $("#intro").removeClass("invisible").fadeIn("slow");
+}
+
+// This method displays the listen content
+function displayListen() {
+    $("#listen").removeClass("invisible").fadeIn("slow");
+}
+
+// This method displays the booking content
+function displayBooking() {
+    $("#booking").removeClass("invisible").fadeIn("slow");
+}
+
+// This method displays the imprint content
+function displayImprint() {
+    $("#imprint").removeClass("invisible").fadeIn("slow");
+}
+
+// This method displays bio content
+function displayBio() {
+    $("#bio").removeClass("invisible").fadeIn("slow");
 }
