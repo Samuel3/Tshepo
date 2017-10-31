@@ -109,14 +109,15 @@ function createWaypoints() {
 
     // Fade in of pics div
     $("#pics").waypoint({handler: function(){
-        displayBooking();
+        displayPics();
     }, offset: 4 * HEADER_SIZE});
 
     // Effects for the nav bar
     $("nav").waypoint({handler: function(direction) {
         $("nav").toggleClass("lift", direction === "down");
+        $("#header").toggleClass("navbar-fixed-top", direction === "down");
     },
-        offset: -HEADER_SIZE });
+        offset: -2*HEADER_SIZE });
 }
 
 // This method is used in nav bar to scroll to dedicated div
@@ -169,7 +170,7 @@ function displayListen() {
 }
 
 // This method displays the pictures content
-function displayListen() {
+function displayPics() {
     $("#pics").removeClass("invisible").fadeIn("slow");
 }
 
