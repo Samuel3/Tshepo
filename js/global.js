@@ -39,6 +39,7 @@ $(document).ready(function () {
 function setMessages() {
     $('body').i18n();
     $('#offersContent').html($.i18n('offersContent'));
+    $("#bioContent").html($.i18n("bio"));
 }
 
 // This method toggles language
@@ -94,9 +95,20 @@ function createWaypoints() {
         $("#bookingLabel").parent().addClass("active");
     },
         offset: HEADER_SIZE});
-
     // Fade in of booking div
     $("#booking").waypoint({handler: function(){
+        displayBooking();
+    }, offset: 4 * HEADER_SIZE});
+
+    // Enlights the pics in nav bar
+    $("#pics").waypoint({handler: function (direction) {
+        $(".nav").find(".active").removeClass("active");
+        $("#picsLabel").parent().addClass("active");
+    },
+        offset: HEADER_SIZE});
+
+    // Fade in of pics div
+    $("#pics").waypoint({handler: function(){
         displayBooking();
     }, offset: 4 * HEADER_SIZE});
 
@@ -154,6 +166,11 @@ function displayInit(){
 // This method displays the listen content
 function displayListen() {
     $("#listen").removeClass("invisible").fadeIn("slow");
+}
+
+// This method displays the pictures content
+function displayListen() {
+    $("#pics").removeClass("invisible").fadeIn("slow");
 }
 
 // This method displays the booking content
