@@ -19,10 +19,12 @@
 		<script src="js/lib/photoswipe-ui-default.min.js"></script>
 		<script src="js/lib/photoswipe.min.js"></script>
 		<script src="js/global.js"></script>
+        <script src="js/gallery.js"></script>
 
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/photoswipe.css">
+		<link rel="stylesheet" href="css/default-skin.css">
 	</head>
 	<body>
 
@@ -62,25 +64,127 @@
 			<div id="intro" class="invisible">
 				<img src="pexels-photo.jpg" class="img-responsive" />
 			</div>
-			<div id="listen" class="invisible">
+
+            <div id="listen" class="invisible">
 				<h2 data-i18n="listenHeader"></h2>
 				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321974013&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240341380&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
+
 			<div id="booking" class="invisible">
 				<h2 data-i18n="offers"></h2>
 				<p id="offersContent"/></p>
 			</div>
-			<div id="bio" class="invisible">
+
+            <div id="bio" class="invisible">
 				<h2 data-i18n="bioLabel"></h2>
 				<p data-i18n="bio" id="bioContent" class="text-left"></p>
 			</div>
-			<div id="pics" class="invisible">
+
+            <div id="pics" class="invisible">
 				<h2 data-i18n="picsLabel"></h2>
-				<p data-i18n="pics"></p>
-			</div>
-			<div id="imprint" class="invisible">
-				<h1 data-i18n="imprintLabel"></h1>
+
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/1.jpg" itemprop="contentUrl" data-size="720x477">
+                            <img src="pics/1.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption  1</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/2.jpg" itemprop="contentUrl" data-size="720x489">
+                            <img src="pics/2.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 2</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/3.jpg" itemprop="contentUrl" data-size="720x729">
+                            <img src="pics/3.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 3</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/4.jpg" itemprop="contentUrl" data-size="720x728">
+                            <img src="pics/4.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 4</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/5.jpg" itemprop="contentUrl" data-size="720x717">
+                            <img src="pics/5.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 5</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/6.jpg" itemprop="contentUrl" data-size="720x711">
+                            <img src="pics/6.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 6</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="pics/7.jpg" itemprop="contentUrl" data-size="1037x691">
+                            <img src="pics/7.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 7</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Background of PhotoSwipe.
+                         It's a separate element, as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+
+                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+                            <div class="pswp__top-bar">
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+                                <div class="pswp__counter"></div>
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div id="imprint" >
+				<h2 data-i18n="imprintLabel"></h2>
 			</div>
 		</div>
 	</body>

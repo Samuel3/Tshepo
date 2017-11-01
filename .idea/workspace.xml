@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d0b4f97-a0c7-4950-ace6-b342814b985b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/default-skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gallery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/global.js" afterPath="$PROJECT_DIR$/js/global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/i18n/de.json" afterPath="$PROJECT_DIR$/js/i18n/de.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/i18n/en.json" afterPath="$PROJECT_DIR$/js/i18n/en.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="947">
+              <caret line="88" column="85" lean-forward="false" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,87 +48,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photoswipe.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/photoswipe.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="15840" lean-forward="false" selection-start-line="4" selection-start-column="15836" selection-end-line="4" selection-end-column="15840" />
-              <folding />
-            </state>
+      <file leaf-file-name="2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="de.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/i18n/de.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="15" column="2853" lean-forward="false" selection-start-line="15" selection-start-column="2853" selection-end-line="15" selection-end-column="2853" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="de.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pics/de.png">
+      <file leaf-file-name="6.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/6.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="5.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/5.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/i18n/en.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="237" lean-forward="false" selection-start-line="15" selection-start-column="237" selection-end-line="15" selection-end-column="237" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="srcollTo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lib/srcollTo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="4.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/4.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="global.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/global.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-511">
-              <caret line="119" column="19" lean-forward="false" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pexels-photo.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pexels-photo.jpg">
+      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pics/1.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -145,15 +142,17 @@
       <find>deut</find>
       <find>deutschlanf</find>
       <find>at this p</find>
-      <find>h2</find>
       <find>html</find>
-      <find>pic</find>
       <find>liste</find>
       <find>displayList</find>
+      <find>pswp__button--arrow--left</find>
+      <find>pic</find>
       <find>pics</find>
+      <find>h2</find>
     </findStrings>
     <replaceStrings>
       <replace>imprintLabel</replace>
+      <replace>h3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -167,11 +166,12 @@
         <option value="$PROJECT_DIR$/js/lib/srcollTo.js" />
         <option value="$PROJECT_DIR$/js/lib/history.js" />
         <option value="$PROJECT_DIR$/js/lib/url.js" />
+        <option value="$PROJECT_DIR$/js/gallery.js" />
         <option value="$PROJECT_DIR$/js/i18n/de.json" />
-        <option value="$PROJECT_DIR$/js/i18n/en.json" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/global.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/global.js" />
+        <option value="$PROJECT_DIR$/js/i18n/en.json" />
       </list>
     </option>
   </component>
@@ -243,26 +243,6 @@
               <item name="Tshepo" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tshepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tshepo" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tshepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tshepo" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="CLDRPluralRuleParser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tshepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tshepo" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery.i18n" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tshepo" type="b2602c69:ProjectViewProjectNode" />
@@ -399,7 +379,7 @@
       <workItem from="1502985510198" duration="42000" />
       <workItem from="1502985572685" duration="13937000" />
       <workItem from="1506769411883" duration="736000" />
-      <workItem from="1509381378130" duration="10972000" />
+      <workItem from="1509381378130" duration="15149000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1499515985699</created>
@@ -485,11 +465,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509479807135</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added header place holder">
+      <created>1509482230062</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1509482230063</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47916000" />
+    <option name="totallyTimeSpent" value="52093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,7 +550,8 @@
     <MESSAGE value="Implemented responsive design." />
     <MESSAGE value="Added nice effects." />
     <MESSAGE value="Added placeholder for pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added placeholder for pictures" />
+    <MESSAGE value="Added header place holder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added header place holder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -660,14 +648,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/photoswipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/lib/srcollTo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -678,45 +658,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/i18n/de.json">
+    <entry file="file://$PROJECT_DIR$/js/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="628">
+          <caret line="205" column="41" lean-forward="false" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/i18n/en.json">
+    <entry file="file://$PROJECT_DIR$/css/photoswipe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="-1135">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="445">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="88" column="85" lean-forward="false" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/global.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="119" column="19" lean-forward="false" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+        <state relative-caret-position="285">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/i18n/de.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="2853" lean-forward="false" selection-start-line="15" selection-start-column="2853" selection-end-line="15" selection-end-column="2853" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/i18n/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="237" lean-forward="false" selection-start-line="15" selection-start-column="237" selection-end-line="15" selection-end-column="237" />
+          <folding />
         </state>
       </provider>
     </entry>

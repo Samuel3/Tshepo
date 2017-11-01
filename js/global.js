@@ -16,6 +16,9 @@ $(document).ready(function () {
             History.Adapter.bind(window, 'statechange', function(){
                 set_locale_to(url('?locale'));
             });
+            if (url("#gid")) {
+                displayPics();
+            }
             $('#lang').on('click', 'a', function(e) {
                     $("#lang").children().css("display", "block");
                 e.preventDefault();
@@ -32,6 +35,7 @@ $(document).ready(function () {
             $('.collapse').collapse('hide');
         }
     });
+    buildGallery();
     setTimeout(function(){displayInit();}, 500);
 });
 
@@ -40,6 +44,7 @@ function setMessages() {
     $('body').i18n();
     $('#offersContent').html($.i18n('offersContent'));
     $("#bioContent").html($.i18n("bio"));
+    $("#imprint").html($.i18n("imprint"));
 }
 
 // This method toggles language

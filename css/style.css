@@ -7,12 +7,6 @@ body {
 .navbar .navbar-collapse {
     text-align: center;
 }
-.german{
-    background-image: url("../pics/de.png");
-}
-.english {
-    background-image: url("../pics/us.png");
-}
 
 .flag{
     background-repeat: no-repeat;
@@ -30,8 +24,9 @@ body {
     font-size: 15px;
 }
 
-#bioContent, #offersContent {
-    padding: 10px;
+html, body{
+    margin:0px;
+    padding:0px;
 }
 
 h1{
@@ -44,13 +39,21 @@ h2 {
     padding-top: 50px;
 }
 
+h3 {
+    padding-left: 10px;
+    padding-top: 30px
+}
+
+p {
+    padding-left: 10px;
+}
+
 img {
     padding-top: 10px;
 }
 
-html, body{
-    margin:0px;
-    padding:0px;
+#bioContent, #offersContent {
+padding: 10px;
 }
 
 iframe{
@@ -68,22 +71,22 @@ iframe{
 }
 
 @-webkit-keyframes sk-rotateplane {
-    0% { -webkit-transform: perspective(120px) }
-    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+0% { -webkit-transform: perspective(120px) }
+50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
 }
 
 @keyframes sk-rotateplane {
-    0% {
-        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-    } 50% {
-          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-      } 100% {
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        }
+0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+} 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+} 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+}
 }
 
 nav{
@@ -93,4 +96,29 @@ nav{
 
 nav .navbar-brand {
     font-size: 22px;
+}
+
+.my-gallery {
+    width: 100%;
+    float: left;
+}
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+.my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+}
+.my-gallery figcaption {
+    display: none;
+}
+
+.german{
+    background-image: url("../pics/de.png");
+}
+.english {
+    background-image: url("../pics/us.png");
 }
