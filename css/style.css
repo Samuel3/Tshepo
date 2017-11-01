@@ -8,6 +8,34 @@ body {
     text-align: center;
 }
 
+#socialMedia{
+    position: absolute;
+    right: 0px;
+}
+
+.logo{
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    padding: 48px 5px 10px 26px;
+}
+
+.twitter{
+    background-image: url("../pics/logos/twitter.png");
+}
+
+.facebook{
+    background-image: url("../pics/logos/facebook.png");
+}
+
+.soundcloud{
+    background-image: url("../pics/logos/soundcloud.png");
+}
+
+.instagram{
+    background-image: url("../pics/logos/instagram.png");
+}
+
 .flag{
     background-repeat: no-repeat;
     width: 48px;
@@ -17,6 +45,7 @@ body {
 
 .lift .navbar-brand  {
     font-size: 18px;
+    display: block;
 }
 
 .lift{
@@ -56,8 +85,16 @@ img {
 padding: 10px;
 }
 
+#imprint h1{
+    padding-top: 230px;
+}
+
 iframe{
     padding-bottom: 10px;
+}
+
+.navbar-brand #top{
+    display: none;
 }
 
 .spinner {
@@ -112,13 +149,18 @@ nav .navbar-brand {
     margin: 0 5px 5px 0;
     width: 150px;
 }
-.my-gallery figcaption {
-    display: none;
-}
 
 .german{
     background-image: url("../pics/de.png");
 }
 .english {
     background-image: url("../pics/us.png");
+}
+
+#brand .jumbotron{
+    background-color: #222;
+    color: #9d9d9d;
+    font-size: 35px;
+    margin-bottom: 0px;
+    text-align: center;
 }

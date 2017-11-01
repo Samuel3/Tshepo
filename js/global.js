@@ -29,6 +29,7 @@ $(document).ready(function () {
     });
     createWaypoints();
     addScrolltargets();
+    $(".navbar-brand").toggle();
     $("#myNavbar").find("a").click(function(){$("#myNavbar").removeClass("in", 500)});
     $(document).click(function(e) {
         if (!$(e.target).is('a')) {
@@ -121,6 +122,7 @@ function createWaypoints() {
     $("nav").waypoint({handler: function(direction) {
         $("nav").toggleClass("lift", direction === "down");
         $("#header").toggleClass("navbar-fixed-top", direction === "down");
+        $(".navbar-brand").toggle(direction === "down");
     },
         offset: -2*HEADER_SIZE });
 }
@@ -167,6 +169,7 @@ function displayInit(){
     $("nav").show("slow");
     $("#welcome").removeClass("invisible").fadeIn("slow");
     $("#intro").removeClass("invisible").fadeIn("slow");
+    $("#brand").removeClass("invisible").fadeIn("slow");
 }
 
 // This method displays the listen content
