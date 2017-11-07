@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Mathes-Metzingen" showNewOnSourceInSync="false">
+  <component name="PublishConfigData" showNewOnSourceInSync="false">
     <serverData>
       <paths name="Mathes-Metzingen">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/tshepo" local="$PROJECT_DIR$" web="/tshepo" />
+            <mapping deploy="/home/mathesme/public_html/tshepo" local="$PROJECT_DIR$" web="/tshepo" />
           </mappings>
         </serverdata>
       </paths>
