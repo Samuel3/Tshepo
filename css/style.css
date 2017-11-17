@@ -36,6 +36,10 @@ body {
     background-image: url("../pics/logos/instagram.png");
 }
 
+.youtube{
+    background-image: url("../pics/logos/youtube-play.png");
+}
+
 .flag{
     background-repeat: no-repeat;
     width: 48px;

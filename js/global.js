@@ -66,10 +66,11 @@ function createWaypoints() {
         offset: HEADER_SIZE});
 
     // Fade in for bio
+    var scrollOffset = 6 * HEADER_SIZE;
     $("#bio").waypoint({
         handler: function () {
             displayBio();
-        }, offset: 4 * HEADER_SIZE    });
+        }, offset: scrollOffset    });
 
     // enlights the nav bar of imprint
     $("#imprint").waypoint({handler: function (direction) {
@@ -93,7 +94,7 @@ function createWaypoints() {
     // Fade in of listen div
     $("#listen").waypoint({handler: function(){
         displayListen();
-    }, offset: 4 * HEADER_SIZE});
+    }, offset: scrollOffset});
 
     // Enlights the booking in nav bar
     $("#booking").waypoint({handler: function (direction) {
@@ -104,7 +105,7 @@ function createWaypoints() {
     // Fade in of booking div
     $("#booking").waypoint({handler: function(){
         displayBooking();
-    }, offset: 4 * HEADER_SIZE});
+    }, offset: scrollOffset});
 
     // Enlights the pics in nav bar
     $("#pics").waypoint({handler: function (direction) {
@@ -116,7 +117,7 @@ function createWaypoints() {
     // Fade in of pics div
     $("#pics").waypoint({handler: function(){
         displayPics();
-    }, offset: 4 * HEADER_SIZE});
+    }, offset: scrollOffset});
 
     // Effects for the nav bar
     $("nav").waypoint({handler: function(direction) {
