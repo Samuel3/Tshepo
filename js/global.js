@@ -30,7 +30,7 @@ $(document).ready(function () {
     createWaypoints();
     addScrolltargets();
     $(".navbar-brand").toggle();
-    $("#myNavbar").find("a").click(function(){$("#myNavbar").removeClass("in", 500)});
+    $("#myNavbar").find("a").click(function(){$("#myNavbar").removeClass("in", 500);});
     $(document).click(function(e) {
         if (!$(e.target).is('a')) {
             $('.collapse').collapse('hide');
