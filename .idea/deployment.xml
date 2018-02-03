@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" showNewOnSourceInSync="false">
     <serverData>
+      <paths name="C-Hope">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Mathes-Metzingen">
         <serverdata>
           <mappings>

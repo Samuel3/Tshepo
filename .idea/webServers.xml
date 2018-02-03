@@ -10,6 +10,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="b93142dd-b72a-431e-9808-fce5d521f705" name="C-Hope" url="http://c-hope.de">
+        <fileTransfer host="c-hope.de" port="22" rootFolder="/home/chopede/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
