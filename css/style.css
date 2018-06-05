@@ -28,16 +28,24 @@ body {
     background-image: url("../pics/logos/facebook.png");
 }
 
-.soundcloud{
-    background-image: url("../pics/logos/soundcloud.png");
-}
-
 .instagram{
     background-image: url("../pics/logos/instagram.png");
 }
 
 .youtube{
     background-image: url("../pics/logos/youtube-play.png");
+}
+
+.amazon{
+    background-image: url("../pics/logos/amazon.png");
+}
+
+.itunes {
+    background-image: url("../pics/logos/itunes.png");
+}
+
+.spotify {
+    background-image: url("../pics/logos/spotify.png");
 }
 
 .flag{
@@ -167,4 +175,8 @@ nav .navbar-brand {
     font-size: 35px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+#player {
+    padding-left: 10px;
 }
